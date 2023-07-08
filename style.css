@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    transition: .4s;
+}
+
+:root{
+    --header-bg-color: #FEFEFF;
+    --link-color: #7F8FA3;
+    --title-color: #001A3A;
+    --bg-color: #F0F3FB;
+    --text-color: #2d4665;
+    --button-bg-color: #3880FF;
+    --black-color: #03060b;
+
+    --title-font-weight: 900;
+    --title-font-size: 5.5rem;
+
+    --text-font-size: 1.25rem;
+    
+    --paragraph-font-size: 1rem;
+
+    --link-font-size: .875rem;
+
+    --lil-title-font-size: 2rem;
+}
+
+header{
+    background: var(--header-bg-color);
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 25px;
+    z-index: 2;
+}
+
+header h1{
+    color: var(--title-color);
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    list-style: none;
+    padding: 0 8px;
+}
+
+header ul li a{
+    padding: 8px 5px;
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: var(--link-font-size);
+    
+}
+
+.social-links{
+    display: flex;
+}
+
+.social-links a{
+    padding: 8px 2px;
+}
+
+header ul input{
+    padding: 0 5px;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+body{
+    background: var(--bg-color);
+}
+
+section{
+    padding: 30px;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.home h1{
+    color: var(--title-color);
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    max-width: 20ch;
+    text-align: center;
+    padding: 10px;
+}
+
+.home h1 span{
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.home p{
+    color: var(--text-color);
+    font-size: var(--text-font-size);
+    padding: 10px;
+    margin: 20px;
+}
+
+.home .get-started-btn{
+    background-color: var(--button-bg-color);
+    color: var(--bg-color);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.home-page-features{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-page-features .cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.home-page-features .cards .card{
+    height: 20vh;
+    width: 30ch;
+    padding: 20px;
+}
+
+.home-page-features .cards .card h1{
+    color: var(--black-color);
+    font-size: var(--lil-title-font-size);
+}
+
+.home-page-features .cards .card p{
+    color: var(--link-color);
+    line-height: 1.1;
+    font-size: var(--paragraph-font-size);
+}
+
+.home-page-features .cards .card i{
+    color: var(--button-bg-color);
+    font-size: var(--lil-title-font-size);
+}
+
+.references{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.references .ref-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.references .ref-content p{
+    color: var(--text-color);
+}
+
+.references .ref-content .ref-cards{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.references .ref-content .ref-cards .ref-card{
+    background-color: green;
+    height: 70px;
+    width: 100px;
+
+}
+
+.references .ref-content .ref-cards .ref-card:nth-child(1){
+    background: url( https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/200px-IBM_logo.svg.png);
+    background-position: center;
+    background-size: 80px;
+    background-repeat: no-repeat;
+}
+
+.references .ref-content .ref-cards .ref-card:nth-child(2){
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/220px-Logo_NIKE.svg.png);
+    background-position: center;
+    background-size: 80px;
+    background-repeat: no-repeat;
+}
+
+.references .ref-content .ref-cards .ref-card:nth-child(3){
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/250px-Google_2015_logo.svg.png);
+    background-position: center;
+    background-size: 80px;
+    background-repeat: no-repeat;
+}
+
+.references .ref-content .ref-cards .ref-card:nth-child(4){
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/220px-Cisco_logo_blue_2016.svg.png);
+    background-position: center;
+    background-size: 80px;
+    background-repeat: no-repeat;
+}
+
+.references .ref-content .ref-cards .ref-card:nth-child(5){
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/150px-Apple_logo_black.svg.png);
+    background-position: center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    
+}
+
+.supporters{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.supporters .supporters-content{
+    background: linear-gradient(rgba(255, 255, 255, 0.2),rgba(255, 255, 255, 0.2) );
+    box-shadow: 0 10px 10px #03060b;
+    width: 50%;
+    height: 30vh;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.supporters .supporters-content h1{
+    color: var(--button-bg-color);
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    letter-spacing: 10px;
+}
+
+.how-to-use{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.how-to-use .how-to-use-cards{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.how-to-use .how-to-use-cards .how-to-use-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6px;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.how-to-use .how-to-use-cards .how-to-use-card a{
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: var(--text-font-size);
+    padding: 6px 0;
+    margin-bottom: 7px;
+}
+
+.how-to-use .how-to-use-cards .how-to-use-card a:hover{
+    color: var(--button-bg-color);
+    transform: translateX(5px);
+}
+
+.how-to-use .how-to-use-cards .how-to-use-card i{
+    font-size: var(--title-font-size);
+    color: var(--button-bg-color);
+    margin-bottom: 20px;
+}
+
+.how-to-use .how-to-use-cards .how-to-use-card .htu-btn{
+    font-size: 2rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--header-bg-color);
+    padding: 20px;
+}
+
+footer .footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    width: 50%;
+}
+
+footer .footer-content div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .footer-content a{
+    font-size: var(--link-font-size);
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+footer .footer-content a:hover{
+    color: var(--button-bg-color);
+}
+
+footer .footer-content h3{
+    font-size: var(--paragraph-font-size);
+    color: var(--text-color);
+}
+
+footer p{
+    color: var(--text-color);
+}
+
+footer .imvora{
+    color: red;
+    text-decoration: none;
+}
+
+
+
+@-webkit-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@-moz-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+ .scroll-btn {
+	display: block;
+	position: absolute;
+	left: 50%;
+    bottom: 20px;
+	text-align: center;
+}
+.scroll-btn > * {
+	display: inline-block;
+	line-height: 18px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #7f8c8d;
+	color: var(--black-color);
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 2px;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+	color: var(--black-color);
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+	position: relative;
+	display: block;
+	width: 35px;
+	height: 55px;
+	margin: 0 auto 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid var(--black-color);
+	border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+	position: absolute;
+	display: block;
+	top: 29%;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+	background: var(--black-color);
+	border-radius: 50%;
+	-webkit-animation: ani-mouse 2.5s linear infinite;
+	-moz-animation: ani-mouse 2.5s linear infinite;
+	animation: ani-mouse 2.5s linear infinite;
+}
